@@ -34,6 +34,17 @@ print("after adding 2 in array elements", numpy_result)
 array_1d = np.array([1,2,3,4,5])
 print("array 1d", array_1d)
 
+# ------------------FLIP----------------
+image_array = np.array([[10,20,30],[40,50,60],[70,80,90]])
+# flip_array = np.flip(image_array,axis=1)
+
+flip_array = np.flip(image_array,axis=0)
+print("flip_array",flip_array)
+
+# ----- ROTATE ARRAY----------------------
+
+rotate_array = np.rot90(image_array)
+print("rotate_array",rotate_array)
 # /////2D dimensions////
 array_2d = np.array([[1,2,3,4,5],[6,7,8,9,10]])
 print("array 2d", array_2d)
