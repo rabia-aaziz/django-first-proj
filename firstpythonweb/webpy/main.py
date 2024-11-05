@@ -151,3 +151,40 @@ print ("array1d", array1d)
 
 array2d = array1d.reshape(3,4)
 print("array2d",array2d)
+
+# ----------------------------------------------------------------------------------------
+#                         INDEXING & SLICING
+# ------------------------------------------------------------------------------------
+array2d = np.array ([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+element = array2d[1,3]
+print ("array2d",element)
+
+row = array2d[0]
+print ("row",row)
+
+column = array2d[:,3]
+print ("column",column)
+
+subArray = array2d[0:2,1:3]
+print("subArray",subArray)
+
+# ------------------------GeneratingDAta-----------------------------
+# ---------------------------Range----------------------------------
+# ---------------------(start,stop,num(increment))-------------------
+range = np.arange(0,10,2)
+print("range",range)
+
+# ----------Linspace-----------------------------
+# ---------(start,stop,step)-------------
+linSpace = np.linspace(0,10,5)
+print("linSpace",linSpace)
+
+# ----------------MANUPLATING DATA------------------------------
+randomArrayLarge = np.random.rand(6,12)
+# meanArray = np.mean(randomArrayLarge)
+print("Random Array",randomArrayLarge)
+print("Mean of Random Array",np.mean(randomArrayLarge))
+print("Sum of Random Array",np.sum(randomArrayLarge))
+print("Min of Random Array",np.min(randomArrayLarge))
+print("Max of Random Array",np.max(randomArrayLarge))
+
