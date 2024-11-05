@@ -199,3 +199,14 @@ print("Sum of Random Array",np.sum(randomArrayLarge))
 print("Min of Random Array",np.min(randomArrayLarge))
 print("Max of Random Array",np.max(randomArrayLarge))
 
+# ------------------FLIP----------------
+image_array = np.array([[10,20,30],[40,50,60],[70,80,90]])
+# flip_array = np.flip(image_array,axis=1)
+
+flip_array = np.flip(image_array,axis=0)
+print("flip_array",flip_array)
+
+# ----- ROTATE ARRAY----------------------
+
+rotate_array = np.rot90(image_array)
+print("rotate_array",rotate_array)
