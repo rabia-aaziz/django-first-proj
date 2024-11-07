@@ -237,7 +237,7 @@ sort_des = sort_asc[::-1]
 print("Descending",sort_des)
 
 
-# ----------sorting 2D array by rows & column axis=1 row,axis=0 column
+# ----------sorting 2D array by rows & column axis=1 row,axis=0 column////////////////////
 
 array2d = np.array([[3,2,1],[4,6,7],[8,9,10]])
 print(array2d)
@@ -264,5 +264,12 @@ print(sort_indexis)
 sort_array = array[sort_indexis]
 print(sort_array)
 
+# ---------filtiring in sorted Array----------------
+array = np.array([5,3,20,40,50])
+print(array)
+sort = np.sort(array[array>10])[::-1]
+# # ----------Descending----------
+# sort_des = sort[::-1]
+print("Descending",sort)
 
 
