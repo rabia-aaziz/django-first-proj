@@ -210,3 +210,59 @@ print("flip_array",flip_array)
 
 rotate_array = np.rot90(image_array)
 print("rotate_array",rotate_array)
+
+# ----------------Copying & Sorting Array----------------
+# ---------------Shallow-copy-------------------------
+original_array =([1,2,3,4,5])
+shallow_array = original_array
+shallow_array[1] = 29
+print("original_array",original_array)
+print("shallow_array",shallow_array)
+
+# ---------------deep-copy-------------------------
+original_array =([1,2,3,4,5])
+deep_copy = original_array.copy()
+deep_copy[4] = 88
+print("original_array",original_array)
+print("deep_copy",deep_copy)
+
+# ------------Sorting-----------------
+array = np.array([50,20,3,40,5])
+print(array)
+----------Sort Asscending----------
+sort_asc = np.sort(array)
+print("Asscending",sort_asc)
+# ----------Descending----------
+sort_des = sort_asc[::-1]
+print("Descending",sort_des)
+
+
+# ----------sorting 2D array by rows & column axis=1 row,axis=0 column
+
+array2d = np.array([[3,2,1],[4,6,7],[8,9,10]])
+print(array2d)
+sort_row = np.sort(array2d ,axis=1)
+print("array 2D sorted by row",sort_row)
+ 
+sort_column = np.sort(array2d,axis=0)
+print("array 2D sorted by column",sort_column)
+
+# ----------sorting 3D array by rows & column axis=1 row,axis=0 column
+
+array3d = np.array([[[30,20,10],[40,60,70],[80,90,100]]])
+print(array3d)
+sort_row = np.sort(array3d ,axis=1)
+print("array 3D sorted by row",sort_row)
+ 
+sort_column = np.sort(array3d,axis=0)
+print("array 3D sorted by column",sort_column)
+
+# ---------------ARG Sort-------------------
+array = np.array([30,20,10])
+sort_indexis =np.argsort(array)
+print(sort_indexis)
+sort_array = array[sort_indexis]
+print(sort_array)
+
+
+
