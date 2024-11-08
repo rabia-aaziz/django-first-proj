@@ -19,18 +19,18 @@ import pandas as pd
 
 # ------------DATAFRAME---------------------
 
-# Define the data dictionary
-# data = {
-#     'calories': [310, 410, 500],
-#     'days': ["monday", "tuesday", "wednesday"],
-#     'passing': [2, 6, 7]
-# }
-# myVar = pd.DataFrame(data,index=["day1","day2","day3"])
-# print(myVar)
-# print(myVar.loc["day1"])
+data = {
+    'calories': [310, 410, 500],
+    'days': ["monday", "tuesday", "wednesday"],
+    'passing': [2, 6, 7]
+}
+myVar = pd.DataFrame(data,index=["day1","day2","day3"])
+print(myVar)
+print(myVar.loc["day1"])
 
- df = pd.read_csv('data.csv')
- # print(df)
- print(df.to_string)
 
-        
+
+#  df = pd.read_csv('data.csv')
+#  print(df)
+
+
