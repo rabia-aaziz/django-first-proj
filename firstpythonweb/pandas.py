@@ -32,5 +32,5 @@ print(myVar.loc["day1"])
 
 #  df = pd.read_csv('data.csv')
 #  print(df)
-
+  # print(df.to_string())
 
