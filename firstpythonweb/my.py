@@ -1,5 +1,9 @@
 # import random
+# import numpy as np
+
+# import pandas as pd
 # from scipy import stats
+# import matplotlib.pyplot as plt
 # number = random.randint(1,10)
 # print(number)
 
@@ -121,7 +125,11 @@
 # //////////STANDARD DEVIATION VARIANCE////////////////
 
 # data = np.array([50, 60, 70, 80, 90, 100, 70, 60, 70])
-
+# /////////Histogram using matplotlib////////
+plt.hist(data, bins=10,label="mean",color="blue")
+plt.title("Standard Deviation")
+plt.grid(True)
+plt.show()
 # mean
 # mean = np.mean(data)
 # std_dev = np.std(data)
