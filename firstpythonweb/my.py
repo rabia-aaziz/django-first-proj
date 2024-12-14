@@ -1,5 +1,5 @@
 # import random
-
+# from scipy import stats
 # number = random.randint(1,10)
 # print(number)
 
@@ -118,4 +118,31 @@
 # linSpace = np.linspace(0,100,7)
 # print("linSpace",linSpace)
 
+# //////////STANDARD DEVIATION VARIANCE////////////////
+
+# data = np.array([50, 60, 70, 80, 90, 100, 70, 60, 70])
+
+# mean
+# mean = np.mean(data)
+# std_dev = np.std(data)
+# var = np.var(data)
+# print("Mean:", mean)
+# print("Standard Deviation:", std_dev)
+# print("Variance:", var)
+
+# median
+# median = np.median(data)
+# std_dev = np.std(data)
+# var = np.var(data)
+# print("Median:", median)
+# print("Standard Deviation:", std_dev)
+# print("Variance:", var)
+
+# mode
+# mode = stats.mode(data)
+# std_dev = np.std(data)
+# var = np.var(data)
+# print("Mode:", mode)
+# print("Standard Deviation:", std_dev)
+# print("Variance:", var)
 
