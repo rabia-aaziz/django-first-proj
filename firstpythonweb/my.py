@@ -5,9 +5,8 @@
 # from scipy import stats
 # import matplotlib.pyplot as plt
 # number = random.randint(1,10)
+
 # print(number)
-
-
 # i = 1
 # while(i<=10):
 #     userInput = int(input("Input your number : "))
